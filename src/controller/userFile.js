@@ -53,3 +53,12 @@ export async function view(req, res) {
             return err;
         });
 }
+
+export async function deleteFile(req, res) {
+    await UserFiles.findOneAndRemove(req.query).then(function (file) {
+        res.status(200).json({ file });
+    }).catch(function (err) {
+        return err;
+    });
+}
+

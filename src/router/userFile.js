@@ -11,5 +11,6 @@ const upload = multer({ dest: 'uploads/' });
  */
 router.post('/add',upload.single('file'),verifyToken,userFileController.add);
 router.get('/view',verifyToken, userFileController.view);
+router.get('/delete',verifyToken, userFileController.deleteFile);
 
 export default router;
