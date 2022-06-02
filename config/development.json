@@ -1,0 +1,10 @@
+{
+  "mongoUrl": "mongodb://127.0.0.1:27017/mobigic_test",
+  "port": "4000",
+  "secretKey": "dcsfdsrfdfc",
+  "aws": {
+    "accessKeyId": "XXXXXXXXXXXXX",
+    "secretAccessKey": "XXXXXXXXXXXXXXXXXXXXXXX",
+    "bucket": "XXXXXXXXXXXXXX"
+  }
+}
